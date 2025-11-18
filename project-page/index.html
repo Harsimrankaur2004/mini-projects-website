@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../global/global.css" />
+    <link rel="stylesheet" href="style.css" />
+    <!-- Highlight.js CSS Theme -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/atom-one-dark.min.css"
+    />
+
+    <title>Projects</title>
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="nav-left">
+        <div class="hamburger">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="32"
+            height="32"
+            viewBox="0 0 24 24"
+            aria-hidden="true"
+            role="img"
+          >
+            <rect x="3" y="5" width="18" height="2" rx="1" fill="white" />
+            <rect x="3" y="11" width="18" height="2" rx="1" fill="white" />
+            <rect x="3" y="17" width="18" height="2" rx="1" fill="white" />
+          </svg>
+        </div>
+        <div class="close">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="32"
+            height="32"
+            viewBox="0 0 24 24"
+            aria-hidden="true"
+            role="img"
+          >
+            <line
+              x1="6"
+              y1="6"
+              x2="18"
+              y2="18"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+            />
+            <line
+              x1="18"
+              y1="6"
+              x2="6"
+              y2="18"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+            />
+          </svg>
+        </div>
+        <div class="label-dropdown">
+          <div class="down-arrow">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              width="32"
+              height="32"
+              role="img"
+              aria-hidden="true"
+            >
+              <title>Circle down arrow</title>
+              <circle
+                cx="12"
+                cy="12"
+                r="10"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+              />
+              <path
+                d="M8 11l4 4 4-4"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.6"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </div>
+          <div class="label-text">Projects</div>
+        </div>
+        <div class="nav-links">
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../about-page/index.html">About</a></li>
+          </ul>
+        </div>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../about-page/index.html">About</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="main-content-wrapper">
+      <aside class="sidebar">
+        <h2>All Projects</h2>
+        <ul id="project-list">
+          <li data-project-id="counter-app" class="active">Counter App</li>
+          <li data-project-id="todo-list">To-Do List</li>
+          <li data-project-id="calculator">Calculator</li>
+          <li data-project-id="color-flipper">Color Flipper</li>
+          <li data-project-id="joke-generator">Joke Generator</li>
+          <li data-project-id="modal-popup">Modal Popup</li>
+          <li data-project-id="js-quiz-app">JavaScript Quiz App</li>
+          <li data-project-id="weather-website">Weather Website</li>
+          <li data-project-id="guess-the-number">Guess the Number</li>
+          <li data-project-id="clock">Clock</li>
+          <li data-project-id="typing-website">Typing Website</li>
+          <li data-project-id="rock-paper-scissors">Rock Paper Scissors</li>
+          <li data-project-id="music-player">Music Player</li>
+          <li data-project-id="matching-pairs-game">Matching pairs Game</li>
+          <li data-project-id="form-validation">Form Validation</li>
+          <li data-project-id="tea-and-coffee">Tea & Coffee</li>
+        </ul>
+      </aside>
+
+      <section class="project-display-area" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
+        <h1 id="project-title">Counter App</h1>
+        <button class="goFullScrn">Go Full Screen</button>
+        <div class="project-live-preview">
+          <iframe
+            id="project-iframe"
+            src="../projects/counter-app/index.html"
+            frameborder="0"
+          ></iframe>
+        </div>
+        <p id="project-description">
+          A simple counter application to demonstrate basic DOM manipulation.
+        </p>
+      </section>
+      <section class="code-display-container" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
+        <div class="code-buttons">
+          <button id="show-html-btn" class="code-button active">HTML</button>
+          <button id="show-css-btn" class="code-button">CSS</button>
+          <button id="show-js-btn" class="code-button">JavaScript</button>
+        </div>
+        <div id="html-code-block" class="code-block active">
+          <pre><code class="language-html"></code></pre>
+          <button class="copy-code-btn" data-target="html-code-block">
+            Copy HTML
+          </button>
+        </div>
+
+        <div id="css-code-block" class="code-block">
+          <pre><code class="language-css"></code></pre>
+          <button class="copy-code-btn" data-target="css-code-block">
+            Copy CSS
+          </button>
+        </div>
+
+        <div id="js-code-block" class="code-block">
+          <pre><code class="language-javascript"></code></pre>
+          <button class="copy-code-btn" data-target="js-code-block">
+            Copy JS
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer"></footer>
+
+    <!-- Highlight.js Library (before closing body) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        once: true,
+      });
+    </script>
+    <script src="scripts/script.js" type="module"></script>
+  </body>
+</html>

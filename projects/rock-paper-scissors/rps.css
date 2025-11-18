@@ -1,0 +1,118 @@
+body {
+  background-color: black;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 8px;
+  color: blueviolet;
+  margin-top: 100px;
+}
+
+.line {
+  margin-top: -15px;
+  margin-bottom: 50px;
+  color: gray;
+}
+
+.game-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 10px;
+}
+
+.game-box,
+.computer-box {
+  width: 170px;
+  padding-top: 10px;
+  border-radius: 10px;
+  font-weight: bold;
+  pointer-events: none;
+  border: 3px solid;
+}
+
+.computer-box {
+  display: none;
+}
+
+.game-box-rock {
+  border-color: rgb(250, 43, 43);
+  color: rgb(250, 43, 43);
+  img {
+    filter: drop-shadow(4px 4px 5px rgb(250, 43, 43));
+  }
+}
+
+.game-box-scissors {
+  border-color: rgb(181, 250, 43);
+  color: rgb(181, 250, 43);
+  img {
+    filter: drop-shadow(4px 4px 5px rgb(181, 250, 43));
+  }
+}
+
+.game-box-paper {
+  border-color: rgb(43, 209, 250);
+  color: rgb(43, 209, 250);
+  img {
+    filter: drop-shadow(4px 4px 5px rgb(43, 209, 250));
+  }
+}
+
+img {
+  width: 50%;
+}
+
+.rps {
+  width: 50px;
+}
+
+.play-game, .reset-btn {
+  color: rgb(44, 233, 69);
+  border: 3px solid rgb(44, 233, 69);
+  background-color: transparent;
+  margin-top: 25px;
+  padding: 15px 50px;
+  border-radius: 10px;
+  font-size: 1em;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.reset-btn {
+  color: rgb(26, 44, 240);
+  border-color: rgb(26, 44, 240);
+  display: none;
+}
+
+.result {
+  color: blueviolet;
+  margin-top: 20px;
+}
+
+.score {
+  color: rgb(67, 165, 42);
+  margin-top: 10px;
+}
+
+.result,
+.score {
+  font-size: 18px;
+  display: none;
+}
+
+@media (max-width: 460px) {
+  h1 {
+    font-size: 22px;
+    column-gap: none;
+    margin-bottom: 30px;
+  }
+ .rps {
+   width: 40px;
+ }
+}

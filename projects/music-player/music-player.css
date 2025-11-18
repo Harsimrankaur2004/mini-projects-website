@@ -1,0 +1,107 @@
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: black;
+  text-align: center;
+  background-color: rgb(31, 28, 28);
+}
+
+.player {
+  width: 400px;
+  border: 3px solid rgba(77, 72, 72, 0.5);
+  background-color: rgb(34, 31, 31);
+  border-radius: 20px;
+  margin: 50px auto;
+  box-shadow: 0 0 10px black;
+}
+
+.cover {
+  width: 60%;
+  border-radius: 10px;
+  margin: 50px auto;
+  img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: inherit;
+  }
+}
+
+.title {
+  color: white;
+}
+
+.artist-name,
+.time {
+  color: gray;
+}
+
+.artist-name {
+  margin-top: -18px;
+  margin-bottom: 25px;
+}
+
+.progress-bar {
+  width: 80%;
+  height: 3px;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin: 10px auto;
+  border-radius: 2px;
+  position: relative;
+}
+
+.progress {
+  height: 3px;
+  background-color: white;
+  width: 0;
+}
+
+.time {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin: auto;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.controls img {
+  width: 50px;
+}
+
+.progress-circle {
+  background-color: #60be92;
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  top: 50%;
+  left: -2px;
+  transform: translate(-50%, -50%);
+}
+
+@media (max-width: 500px) {
+  .player {
+    width: 80%;
+  }
+
+  .cover img {
+    height: 250px
+  }
+}
+
+@media (max-width: 490px) {
+  .cover img{
+    max-height: 200px;
+  }
+}
+
+@media (max-width: 400px) {
+  .cover img{
+    max-height: 170px;
+  }
+}

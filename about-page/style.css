@@ -1,0 +1,130 @@
+.grid {
+  display: grid;
+  grid-template-columns: 64ch 320px;
+  margin: auto;
+  gap: 28px;
+}
+
+h1 {
+  margin: 0 0 12px 0;
+  font-size: 48px;
+  letter-spacing: -0.02em;
+  color: #ffffff;
+}
+
+.lead {
+  margin: 0 0 18px 0;
+  color: #bdbdbd;
+  font-size: 18px;
+  max-width: 64ch;
+}
+
+section {
+  margin-bottom: 22px;
+  align-items: start;
+}
+
+.section-title {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+
+.kicker {
+  background: linear-gradient(90deg, #9f86e8, rgba(159, 134, 232, 0.6));
+  padding: 6px 10px;
+  border-radius: 999px;
+  color: #000;
+  font-weight: 600;
+  font-size: 13px;
+}
+
+p {
+  margin: 0 0 10px 0;
+  color: #e8e8e8;
+}
+
+.muted {
+  color: #bdbdbd;
+  font-size: 15px;
+}
+
+.side-card {
+  background-color: #0f0f1d;;
+  border-radius: 14px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+  text-align: center;
+}
+
+.avatar {
+  width: 96px;
+  height: 96px;
+  border-radius: 999px;
+  background: linear-gradient(180deg, #9f86e8, rgba(159, 134, 232, 0.6));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  color: #000;
+  font-size: 28px;
+  box-shadow: 0 6px 18px rgba(159, 134, 232, 0.14);
+}
+
+.cta {
+  display: inline-block;
+  margin-top: 8px;
+  text-decoration: none;
+  padding: 10px 14px;
+  border-radius: 10px;
+  background: linear-gradient(90deg, #9f86e8, #7b61e0);
+  color: #000;
+  font-weight: 700;
+  box-shadow: 0 8px 20px rgba(159, 134, 232, 0.12);
+}
+
+ul {
+  margin: 0;
+  padding-left: 18px;
+}
+
+li {
+  margin-bottom: 8px;
+}
+
+.tag {
+  display: inline-block;
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: rgba(159, 134, 232, 0.12);
+  color: #9f86e8;
+  font-weight: 600;
+  font-size: 13px;
+}
+
+.contact {
+  margin-top: 6px;
+  color: #bdbdbd;
+  font-size: 13px;
+}
+
+@media (max-width: 960px) {
+  .grid {
+    grid-template-columns: 1fr 320px;
+    margin: 0;
+  }
+}
+
+@media (max-width: 900px) {
+  .navbar .nav-left {
+    justify-content: end;
+  }
+  .grid {
+    grid-template-columns: 1fr;
+    margin: 0;
+  }
+}

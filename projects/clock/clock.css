@@ -1,0 +1,40 @@
+body {
+  background: linear-gradient(135deg, #2c3e50, #3498db);
+  text-align: center;
+  height: 100vh;
+}
+
+.box {
+  margin: 100px auto;
+  font-family: 'Courier New', Courier, monospace;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  width: 300px;
+  color: white;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.time {
+  font-size: 45px;
+  font-weight: bold;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #24b4f7;
+  color: white;
+  box-shadow: 0 4px 15px rgba(36, 180, 247, 0.4);
+}
+
+@media (max-width: 390px) {
+  .box {
+    width: 270px;
+  }
+}

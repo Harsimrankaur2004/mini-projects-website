@@ -1,0 +1,58 @@
+body {
+  background-color: #1a1a2e;
+}
+
+h1,
+span {
+  color: white;
+}
+
+.counter-container {
+  text-align: center;
+  margin-top: 100px;
+}
+
+#value {
+  font-size: 4rem;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.button-group {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.btn {
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background-color: #f0f0f0;
+}
+
+.btn.decrease {
+  background-color: #e74c3c;
+  color: white;
+  border-color: #c0392b;
+}
+
+.btn.reset {
+  background-color: #3498db;
+  color: white;
+  border-color: #2980b9;
+}
+
+.btn.increase {
+  background-color: #2ecc71;
+  color: white;
+  border-color: #27ae60;
+}
+
+@media (max-width: 430px) {
+  .btn {
+    padding: 8px 10px;
+  }
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="music-player.css" />
+    <title>Music Player</title>
+  </head>
+  <body>
+    <div class="player">
+      <div class="cover">
+        <img class="cover-photo" src="images/cover-photo.png" alt="cover image" />
+      </div>
+
+      <h2 class="title">Akhar</h2>
+      <div class="artist-name">Amrinder Gill</div>
+      <audio class="audio" src="songs/Akhar.mp3"></audio>
+
+      <div class="progress-bar">
+        <div class="progress"></div>
+        <div class="progress-circle"></div>
+      </div>
+      <div class="time">
+        <div class="time-left">0:00</div>
+        <div class="time-duration">3:40</div>
+      </div>
+
+      <div class="controls">
+        <div class="prev">
+          <img src="images/prev-button.png" alt="previous" />
+        </div>
+        <div class="play">
+          <img src="images/play-button.png" alt="play" />
+        </div>
+        <div class="next">
+          <img src="images/next-button.png" alt="next" />
+        </div>
+      </div>
+    </div>
+    <script src="music-player.js"></script>
+  </body>
+</html>

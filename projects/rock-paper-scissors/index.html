@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="rps.css">
+    <title>Rock Paper Scissors</title>
+</head>
+<body>
+        <h1>
+            <img class="rps" src="images/rps.png">
+            ROCK PAPER SCISSORS
+        </h1>
+        <p class="line">Choose your move to play against the computer</p>
+
+        <div class="game-container">
+            <div class="game-box game-box-rock">
+                <img src="images/rock.png" alt="rock">
+                <p>ROCK</p>
+            </div>
+            <div class="game-box game-box-paper">
+               <img src="images/paper.png" alt="paper">
+                <p>PAPER</p>
+            </div>
+            <div class="game-box game-box-scissors">
+               <img src="images/scissors.png" alt="scissors">
+                <p>SCISSORS</p>
+            </div>
+             <div class="computer-box">
+               <img src="images/paper.png" alt="paper">
+                <p>PAPER</p>
+            </div>
+        </div>
+        
+        <div class="result">It's a Tie.</div>
+        <div class="score">
+            Wins: 0, Losses: 0, Ties: 0
+        </div>
+        <button class="play-game">PLAY GAME</button>
+        <button class="reset-btn">RESET GAME</button>
+    <script src="rps.js"></script>
+</body>
+</html>

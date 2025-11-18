@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../global/global.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+
+    <title>My Interactive Mini Projects</title>
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="nav-left">
+        <div class="hamburger">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="32"
+            height="32"
+            viewBox="0 0 24 24"
+            aria-hidden="true"
+            role="img"
+          >
+            <rect x="3" y="5" width="18" height="2" rx="1" fill="white" />
+            <rect x="3" y="11" width="18" height="2" rx="1" fill="white" />
+            <rect x="3" y="17" width="18" height="2" rx="1" fill="white" />
+          </svg>
+        </div>
+        <div class="close">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="32"
+            height="32"
+            viewBox="0 0 24 24"
+            aria-hidden="true"
+            role="img"
+          >
+            <line
+              x1="6"
+              y1="6"
+              x2="18"
+              y2="18"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+            />
+            <line
+              x1="18"
+              y1="6"
+              x2="6"
+              y2="18"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+            />
+          </svg>
+        </div>
+        <div class="logo">Mini Projects</div>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="../project-page/index.html">Projects</a></li>
+          <li><a href="../about-page/index.html">About</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="main-content-wrapper">
+      <aside class="sidebar">
+        <h2>Home</h2>
+        <ul>
+          <li><a href="../project-page/index.html">Projects</a></li>
+          <li><a href="../about-page/index.html">About</a></li>
+        </ul>
+      </aside>
+
+      <div
+        data-aos="fade-down"
+        data-aos-duration="1000"
+        data-aos-delay="500"
+        class="intro"
+      >
+        <h1>Building small projects that teach big lessons</h1>
+        <p>Projects that make me curious.</p>
+        <button>
+          <a href="../project-page/index.html">Explore projects</a>
+        </button>
+      </div>
+
+      <section
+        class="featured-projects"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+        data-aos-delay="500"
+      >
+        <h2>Featured Projects</h2>
+        <div class="projects">
+          <div
+            data-project-id="todo-list"
+            class="project project-1"
+            data-aos="fade-right"
+            data-aos-delay="100"
+            data-aos-duration="1000"
+          >
+            <div class="project-detail-box">
+              <div class="project-img">
+                <img
+                  src="images/projects-images/to-do-list.png"
+                  alt="to do list img"
+                />
+              </div>
+              <div class="project-info">
+                <div class="project-title">To-Do List</div>
+                <div class="project-description">
+                  To-Do List is a simple productivity app that helps you
+                  organize your daily tasks.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            data-project-id="guess-the-number"
+            class="project project-2"
+            data-aos="fade-left"
+            data-aos-delay="100"
+            data-aos-duration="1000"
+          >
+            <div class="project-detail-box">
+              <div class="project-img">
+                <img
+                  src="images/projects-images/guess-the-number.png"
+                  alt="gusess the number img"
+                />
+              </div>
+              <div class="project-info">
+                <div class="project-title">Guess the Number</div>
+                <div class="project-description">
+                  Guess the Number is a simple game where the computer randomly
+                  picks a secret number, and the player has to guess it.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            data-project-id="music-player"
+            class="project project-3"
+            data-aos="fade-right"
+            data-aos-delay="100"
+            data-aos-duration="1000"
+          >
+            <div class="project-detail-box">
+              <div class="project-img">
+                <img
+                  src="images/projects-images/music-player.png"
+                  alt="music player img"
+                />
+              </div>
+              <div class="project-info">
+                <div class="project-title">Music Player</div>
+                <div class="project-description">
+                  Mini music player made with HTML, CSS, and JavaScript —
+                  supports play, pause, skip, and progress tracking.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            data-project-id="matching-pairs-game"
+            class="project project-4"
+            data-aos="fade-left"
+            data-aos-delay="100"
+            data-aos-duration="1000"
+          >
+            <div class="project-detail-box">
+              <div class="project-img">
+                <img
+                  src="images/projects-images/matching-pairs.png"
+                  alt="matching pairs img"
+                />
+              </div>
+              <div class="project-info">
+                <div class="project-title">Matching Pairs</div>
+                <div class="project-description">
+                  Mini memory game built with HTML, CSS, and JavaScript — match
+                  pairs of cards and test your focus.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="website-info">
+        <div
+          class="tech-stack"
+          data-aos="fade-right"
+          data-aos-delay="100"
+          data-aos-duration="1000"
+        >
+          <h2>Tech Stack</h2>
+          <div class="tech-stack-images">
+            <div class="logo-box">
+              <img src="images/tech-stack-images/html.png" alt="html logo" />
+              <div>HTML</div>
+            </div>
+            <div class="logo-box">
+              <img src="images/tech-stack-images/css.png" alt="css logo" />
+              <div>CSS</div>
+            </div>
+            <div class="logo-box">
+              <img src="images/tech-stack-images/js.png" alt="js logo" />
+              <div>JavaScript</div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="about"
+          data-aos="fade-left"
+          data-aos-delay="100"
+          data-aos-duration="1000"
+        >
+          <h2>About</h2>
+          <p>
+            I love breaking down front-end problems into small, fun projects.
+            Each project here started has curiosity --- and ended as something
+            that taught me a new trick in HTML, CSS and JavaScript.
+          </p>
+          <a href="../about-page/index.html">Read more</a>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer"></footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        once: true,
+      });
+    </script>
+    <script src="script.js" type="module"></script>
+  </body>
+</html>

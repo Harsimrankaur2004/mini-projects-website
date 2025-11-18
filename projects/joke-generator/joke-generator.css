@@ -1,0 +1,40 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f7f7;
+}
+
+.container {
+  margin: 100px auto;
+  width: 400px;
+  height: 280px;
+  text-align: center;
+  padding: 20px 0;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+}
+
+.box {
+  background-color: #a3d3ff;
+  padding: 20px;
+  border-radius: 10px;
+  width: 75%;
+  height: 150px;
+  margin: 0 auto;
+}
+
+#jokeBtn {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  background-color: #324de6;
+  color: white;
+  cursor: pointer;
+}
+
+@media (max-width: 450px) {
+  .container {
+    width: 300px;
+  }
+}

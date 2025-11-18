@@ -1,0 +1,258 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #1a1a2e;
+  color: #e0e0e0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background-color: #0f0f1d;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  z-index: 2;
+}
+
+.navbar .nav-left {
+  display: flex;
+  column-gap: 10px;
+}
+
+.navbar .nav-left .close {
+  cursor: pointer;
+}
+
+.nav-links {
+  visibility: hidden;
+  position: absolute;
+  background-color: #9f86e8;
+  padding: 0 15px;
+  z-index: 1;
+  border-radius: 10px;
+  right: 20px;
+  width: 120px;
+  transform: translateY(-120%);
+  transition: transform 0.3s ease visibility 0.5s ease;
+}
+
+.nav-links.open-navlinks {
+  visibility: visible;
+  transform: translateY(60%);
+}
+
+.navbar .nav-links ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.navbar .hamburger {
+  cursor: pointer;
+  display: none;
+}
+
+.navbar .label-dropdown {
+  display: flex;
+  column-gap: 5px;
+  pointer-events: none;
+}
+
+.nav-left .label-dropdown .down-arrow svg {
+  width: 20px;
+}
+
+.nav-left .label-dropdown .down-arrow {
+  display: none;
+}
+
+.navbar .label-text {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #9f86e8;
+}
+
+.navbar nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navbar nav ul li {
+  margin-left: 30px;
+}
+
+.navbar nav ul li a {
+  color: #e0e0e0;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+
+.navbar nav ul li a:hover,
+.navbar nav ul li a.active {
+  color: #a0d9e8;
+}
+
+/* Main Content Wrapper */
+.main-content-wrapper {
+  position: relative;
+  display: flex;
+  flex: 1;
+  padding: 20px 30px;
+  gap: 30px;
+}
+
+/* Sidebar */
+.sidebar {
+  z-index: 2;
+  background-color: #9f86e8;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+  position: absolute;
+  top: 0;
+  bottom: 20px;
+  transition: transform 0.3s ease, visibility 0.3s ease;
+  overflow-y: auto;
+  transform: translateX(-10%);
+  visibility: visible;
+}
+
+.sidebar h2 {
+  color: #0f0f1d;
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+}
+
+.sidebar ul,
+.nav-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar ul li,
+.nav-links ul li {
+  padding: 12px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.sidebar ul li:hover,
+.nav-links ul li:hover {
+  background-color: #2a2a44;
+  color: #a0d9e8;
+}
+
+.sidebar ul li.active {
+  background-color: #0f0f1d;
+  color: #fff;
+  font-weight: bold;
+}
+
+/* section */
+section {
+  flex: 1;
+  background-color: #0f0f1d;
+  padding: 5px 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer {
+  margin-top: auto;
+  background-color: #0f0f1d;
+  color: #bbb;
+  text-align: center;
+  padding: 20px 40px;
+  border-top: 1px solid #2a2a44;
+}
+
+.footer .social-links a {
+  color: #a0d9e8;
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 1rem;
+  transition: color 0.2s ease;
+}
+
+.footer .social-links a:hover {
+  color: #9f86e8;
+}
+
+.footer p {
+  margin-top: 15px;
+  font-size: 0.9rem;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  transition: background-color 0.2s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255, 255, 255, 0.3) transparent;
+}
+
+/* Responsive Adjustments (Optional, but good practice) */
+@media (max-width: 900px) {
+  .main-content-wrapper {
+    flex-direction: column;
+    padding: 20px;
+  }
+  section {
+    padding: 20px;
+  }
+  .navbar {
+    padding: 8px 20px;
+  }
+  .navbar nav {
+    display: none;
+  }
+  .navbar .nav-left {
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .navbar .label-dropdown {
+    padding: 10px;
+    border-radius: 5px;
+    pointer-events: all;
+    width: 129px;
+    cursor: pointer;
+  }
+  .navbar .label-dropdown .down-arrow {
+    display: block;
+  }
+  .navbar .label-dropdown:hover {
+    background-color: #5a5a8e;
+  }
+  .sidebar {
+    bottom: 45%;
+  }
+}
